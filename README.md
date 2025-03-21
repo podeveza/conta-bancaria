@@ -6,19 +6,16 @@
 
 **Entrega da Avaliação:** Os alunos que atingirem a carga horária mínima necessária serão avaliados com base em um projeto prático, que deve demonstrar os conceitos aprendidos sobre classes e orientação a objetos em JavaScript ou TypeScript.
 
-### Requisitos Mínimos da Entrega
+### Projeto Conta Bancária Simples
 
-**O tema do projeto é livre** e deve atender aos seguintes critérios:
+**O Tema do projeto é uma conta bancária** e segue aos seguintes critérios:
 
 1. **Uso de Classes**
-    1. O aluno deve criar pelo menos duas classes que representem entidades do mundo real.
-    2. Cada classe deve ter propriedades e métodos adequados.
+    1. Foram criadas as seguintes classes: **ContaBancaria**, **ContaCorrente** e **ContaPoupanca**.
 2. **Encapsulamento**
-    1. Uso de modificadores de acesso (private, public ou protected) para garantir o encapsulamento adequado.
-    2. Deve haver pelo menos um método getter e setter para manipulação de dados privados.
+    1. Foi usado modificadores de acesso **protected** para saldo e **private** para limite e taxaJuros. Também há um getSaldo().
 3. **Herança**
-    1. Pelo menos uma classe deve herdar de outra e sobrescrever um método ou adicionar novos comportamentos.
+    1. As classes **ContaCorrente** e **ContaPoupanca** herdam de **ContaBancaria**
 4. **Polimorfismo**
-    1. Implementação de um método que demonstre polimorfismo, ou seja, um método que tenha comportamentos diferentes em classes derivadas.
-5. **Código Bem Estruturado**
-    1. O código deve seguir boas práticas de programação, incluindo indentação adequada, nomenclatura clara e organização coerente.
+    1. O método **sacar()** é sobrescrito a **ContaCorrente** para permitir saques.
+   
